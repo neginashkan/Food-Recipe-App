@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/chefs-cooking-healthy-food-according-to-recipe-book_low.png">
+    <script
+      src="https://kit.fontawesome.com/8587bf19c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Food Recipe App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <main>
+          <section>
+            <h1 class="heading">Find Delicious Recipes For Any Occasion</h1>
+            <h2 class="tagline">Cook Up Something Special....</h2>
+            <p class="description">
+              Find tasty recipes for any occasion with our easy-to-use recipe
+              website. From healthy snacks to decadent desserts, we have the
+              perfect recipe for you!
+            </p>
+          </section>
+          <form id="search-form">
+            <input
+              autocomplete="off"
+              autofocus
+              type="text"
+              class="food-input"
+              id="food-name"
+              placeholder="Discover Recipes...!"
+            />
+            <button type="submit" id="search-button" class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button id="random-button" class="random-button"> Random <i class="fa-solid fa-shuffle"></i></button>
+            <div class="error-massage" id="error-massage"></div>
+          </form>
+        </main>
+        <div class="main-image">
+          <img
+            class="chefs-cooking-image"
+            src="images/chefs-cooking-healthy-food-according-to-recipe-book.jpg"
+            alt="Tiny chefs cooking healthy food according to recipe-book"
+          />
+        </div>
+      </div>
+    </header>
+    <footer>
+      <h4 >
+        <span id="h4-span-title">Trending </span><i class="fa-solid fa-arrow-down"></i>
+      </h4>
+      <div class="search-result visible" id="search-result">
+        <!-- <div class="row">
+          <div class="recipe-box">
+            <img class="recipe-image" src="images/Tiramisu.jpg" alt="" />
+            <div class="recipe-name">Tiramisu</div>
+            <div class="see-full-recipe">
+              <button class="full-recipe-button">Get Recipe</button>
+            </div>
+          </div>
+          <div class="recipe-box">
+            <img class="recipe-image" src="images/Tiramisu.jpg" alt="" />
+            <div class="recipe-name">Tiramisu</div>
+            <div class="see-full-recipe">
+              <button class="full-recipe-button">Get Recipe</button>
+            </div>
+          </div>
+          <div class="recipe-box">
+            <img class="recipe-image" src="images/Tiramisu.jpg" alt="" />
+            <div class="recipe-name">Tiramisu</div>
+            <div class="see-full-recipe">
+              <button class="full-recipe-button">Get Recipe</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <button id="back-button" class="back-button hidden"><i class="fa-solid fa-arrow-left"></i> go back </button>
+      <div class="each-food-recipe hidden" id="clicked-food-recipe">
+        <div class="foodname-foodimage-foodingredients-div">
+          <img
+            id="food-image"
+            src=""
+            alt=""
+            class="food-image"
+          />
+          <div class="food-title" ></div>
+          <div class="s">Summary :</div>
+          <div class="summary" id="summary"></div>
+        </div>
+        <div class="recipe-food">
+          <div class="i">Ingredients:</div>
+          <div class="ingredients" id="ingredients"></div>
+          <div class="r">Recipe :</div>
+          <div class="food-recipe" id="recipe"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="javaScript/app.js"></script>
+  </body>
+</html>
